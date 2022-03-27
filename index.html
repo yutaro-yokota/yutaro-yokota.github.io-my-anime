@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animetion</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <p>YUTARO</p>
+    <ul>
+      <li><a href="#modal_group">モーダル各種</a></li>
+      <li><a href="#hum_group">ハンバーガー各種</a></li>
+      <li><a href="#accordion_group">アコーディオン各種</a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+    </ul>
+  </header>
+
+  <div id="modal_group">
+    <h1 id="modal">モーダルウインドウ各種</h1>
+    <div class="modal">
+      <button class="modal_item modal1">上から</button>
+      <button class="modal_item modal2">下から</button>
+      <button class="modal_item modal3">ふわっと表示</button>
+      <button class="modal_item modal4">とんでくる。</button>
+    </div>
+  
+    <div id="mask">
+    </div>
+    <div class="modal_area modal_area1">
+      <section class="modal_text modal_text1">
+        <p>参考モーダル１。上から降ってきます。</p>
+        <div class="close">
+          閉じる
+        </div>
+      </section>
+    </div>
+  
+    <div class="modal_area modal_area2">
+      <section class="modal_text modal_text2">
+        <p>参考モーダル２。下から飛んできます。
+        </p>
+        <div class="close">
+          閉じる
+        </div>
+      </section>
+    </div>
+  
+    <div class="modal_area modal_area3">
+      <section class="modal_text modal_text3">
+        <p>参考モーダル３。出現します。</p>
+        <div class="close">
+          閉じる
+        </div>
+      </section>
+    </div>
+  
+    <div class="modal_area modal_area4">
+      <section class="modal_text modal_text4">
+        <p>参考モーダル４。どこからかとんできます。</p>
+        <div class="close">
+          閉じる
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="hum_group">
+    <h1 id="hum">ハンバーガーメニュー各種</h1>
+    <div class="hamburger-menu">
+      <input type="checkbox" id="menu-btn-check">
+      <label for="menu-btn-check" class="menu-btn"><span></span></label>
+      <div class="menu-content">
+        <ul>
+            <li>
+                <a href="">メニューリンク1</a>
+            </li>
+            <li>
+                <a href="">メニューリンク2</a>
+            </li>
+            <li>
+                <a href="">メニューリンク3</a>
+            </li>
+        </ul>
+      </div>
+  </div>
+  
+  
+  <span class="material-icons material_menu">
+    menu
+    </span>
+  
+    <div class="overlay">
+      <span class="material-icons material_close">
+        close
+        </span>
+      <div class="material_menu">
+        <ul>
+          <li><a href="">menu</a></li>
+          <li><a href="">menu</a></li>
+          <li><a href="">menu</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="accordion_group">
+    <h1 id="accordion">アコーディオンメニュー各種</h1>
+    <details>
+      <summary>
+        アコーディオンってなんですか？
+      </summary>
+      <p>
+        このように質問に対して即座にそれに沿った項目を表示させます。
+      </p>
+    </details>
+
+    <div class="faq">
+      <dl>
+        <dt>どういう表示形式がありますか？</dt>
+        <dd>表示形式は思いつく限り無限の可能性があります。
+          基本的な表示はクリックすると中の要素が開くという形式になります。
+          そこにアニメーションなどを指定してオリジナリティーがでます。
+        </dd>
+      </dl>
+    </div>
+
+    <div class="menu_content">
+      <ul>
+        <li><p id="content_menu1">menu1</p></li>
+        <li id="content_list1">
+          <ul>
+            <li><a href="">link1</a></li>
+            <li><a href="">link2</a></li>
+          </ul>
+        </li>
+        <li><p id="content_menu2">menu2</p></li>
+        <li id="content_list2">
+          <ul>
+            <li><a href="">link3</a></li>
+            <li><a href="">link4</a></li>
+          </ul>
+        </li>
+        <li><p id="content_menu3">menu3</p></li>
+        <li id="content_list3">
+          <ul>
+            <li><a href="">link5</a></li>
+            <li><a href="">link6</a></li>
+          </ul>
+        </li>
+        <li><p id="content_menu4">menu4</p></li>
+        <li id="content_list4">
+          <ul>
+            <li><a href="">link7</a></li>
+            <li><a href="">link8</a></li>
+          </ul>
+        </li>
+        <li><p id="content_menu5">menu5</p></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
